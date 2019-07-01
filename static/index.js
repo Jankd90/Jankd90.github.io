@@ -66,7 +66,7 @@ async function app() {
     let c2 = document.createElement("DIV");
     c2.classList = "ui grid";
     let c21 = document.createElement("DIV");
-    c21.classList = "two wide column";
+    c21.classList = "four wide column";
     let c211 = document.createElement("DIV");
     c211.classList = "ui vertical animated large button blue";
     c211.id = `train-class-${length}`;
@@ -83,7 +83,7 @@ async function app() {
     c2112.innerHTML = "Train";
 
     let c22 = document.createElement("DIV");
-    c22.classList = "fourteen wide right floated column";
+    c22.classList = "twelve wide right floated column";
     let c221 = document.createElement("DIV");
     c221.classList = "ui labeled input";
     let c2211 = document.createElement("DIV");
