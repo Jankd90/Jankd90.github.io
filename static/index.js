@@ -24,7 +24,7 @@ async function setupWebcam() {
     if (navigator.getUserMedia) {
       navigator.getUserMedia(
         { video: { 
-          facingMode: { exact: "environment" }
+          facingMode: "environment" 
         } },
         stream => {
           webcamElement.srcObject = stream;
