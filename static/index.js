@@ -155,7 +155,7 @@ async function app() {
       // Get the most likely class and confidences from the classifier module.
       const result = await classifier.predictClass(activation);
       if(connected){
-        fetch(classes[result.classIndex]);
+        fetch(`http://${classes[result.classIndex]}`, {mode: 'cors'});
       }
       //fetch(classes[result.classIndex]);
       //document.getElementById("console").innerText = `
